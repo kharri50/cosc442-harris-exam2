@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.3" sequence="1" timestamp="1526740302647" analysisTimestamp="1526740299502" release="">
+  <Project projectName="JoshHack">
+    <Jar>/Users/kyleharris/Documents/School/Spring 2018/COSC442/Final/JoshHack/bin</Jar>
+    <AuxClasspathEntry>/Users/kyleharris/Documents/School/Spring 2018/COSC442/Final/JoshHack/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/kyleharris/Documents/School/Spring 2018/COSC442/Final/JoshHack/libs/asciiPanel.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/kyleharris/Documents/School/Spring 2018/COSC442/Final/JoshHack/libs/junit-4.12.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/kyleharris/Documents/School/Spring 2018/COSC442/Final/JoshHack/libs/hamcrest-core-1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jce.jar</AuxClasspathEntry>
+    <SrcDir>/Users/kyleharris/Documents/School/Spring 2018/COSC442/Final/JoshHack/src</SrcDir>
+  </Project>
+  <BugInstance type="SE_BAD_FIELD_STORE" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE" first="1">
+    <Class classname="game.AppletMain">
+      <SourceLine classname="game.AppletMain" sourcefile="AppletMain.java" sourcepath="game/AppletMain.java"/>
+    </Class>
+    <Field classname="game.AppletMain" name="screen" signature="Lui/Screen;" isStatic="false">
+      <SourceLine classname="game.AppletMain" sourcefile="AppletMain.java" sourcepath="game/AppletMain.java"/>
+    </Field>
+    <Type descriptor="Lui/StartScreen;" role="TYPE_FOUND">
+      <SourceLine classname="ui.StartScreen" start="7" end="17" sourcefile="StartScreen.java" sourcepath="ui/StartScreen.java"/>
+    </Type>
+    <SourceLine classname="game.AppletMain" start="21" end="21" startBytecode="32" endBytecode="32" sourcefile="AppletMain.java" sourcepath="game/AppletMain.java"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD_STORE" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE" first="1">
+    <Class classname="game.ApplicationMain">
+      <SourceLine classname="game.ApplicationMain" sourcefile="ApplicationMain.java" sourcepath="game/ApplicationMain.java"/>
+    </Class>
+    <Field classname="game.ApplicationMain" name="screen" signature="Lui/Screen;" isStatic="false">
+      <SourceLine classname="game.ApplicationMain" sourcefile="ApplicationMain.java" sourcepath="game/ApplicationMain.java"/>
+    </Field>
+    <Type descriptor="Lui/StartScreen;" role="TYPE_FOUND">
+      <SourceLine classname="ui.StartScreen" start="7" end="17" sourcefile="StartScreen.java" sourcepath="ui/StartScreen.java"/>
+    </Type>
+    <SourceLine classname="game.ApplicationMain" start="22" end="22" startBytecode="36" endBytecode="36" sourcefile="ApplicationMain.java" sourcepath="game/ApplicationMain.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NEXTINT_VIA_NEXTDOUBLE" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" first="1">
+    <Class classname="game.Creature">
+      <SourceLine classname="game.Creature" sourcefile="Creature.java" sourcepath="game/Creature.java"/>
+    </Class>
+    <Method classname="game.Creature" name="commonAttack" signature="(Lgame/Creature;ILjava/lang/String;[Ljava/lang/Object;)V" isStatic="false">
+      <SourceLine classname="game.Creature" start="179" end="198" startBytecode="0" endBytecode="307" sourcefile="Creature.java" sourcepath="game/Creature.java"/>
+    </Method>
+    <SourceLine classname="game.Creature" start="183" end="183" startBytecode="25" endBytecode="25" sourcefile="Creature.java" sourcepath="game/Creature.java"/>
+    <SourceLine classname="game.Creature" start="183" end="183" startBytecode="25" endBytecode="25" sourcefile="Creature.java" sourcepath="game/Creature.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NEXTINT_VIA_NEXTDOUBLE" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" first="1">
+    <Class classname="game.CreatureAi">
+      <SourceLine classname="game.CreatureAi" sourcefile="CreatureAi.java" sourcepath="game/CreatureAi.java"/>
+    </Class>
+    <Method classname="game.CreatureAi" name="wander" signature="()V" isStatic="false">
+      <SourceLine classname="game.CreatureAi" start="61" end="71" startBytecode="0" endBytecode="243" sourcefile="CreatureAi.java" sourcepath="game/CreatureAi.java"/>
+    </Method>
+    <SourceLine classname="game.CreatureAi" start="61" end="61" startBytecode="7" endBytecode="7" sourcefile="CreatureAi.java" sourcepath="game/CreatureAi.java"/>
+    <SourceLine classname="game.CreatureAi" start="61" end="61" startBytecode="7" endBytecode="7" sourcefile="CreatureAi.java" sourcepath="game/CreatureAi.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NEXTINT_VIA_NEXTDOUBLE" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" first="1">
+    <Class classname="game.FungusAi">
+      <SourceLine classname="game.FungusAi" sourcefile="FungusAi.java" sourcepath="game/FungusAi.java"/>
+    </Class>
+    <Method classname="game.FungusAi" name="spread" signature="()V" isStatic="false">
+      <SourceLine classname="game.FungusAi" start="18" end="31" startBytecode="0" endBytecode="242" sourcefile="FungusAi.java" sourcepath="game/FungusAi.java"/>
+    </Method>
+    <SourceLine classname="game.FungusAi" start="18" end="18" startBytecode="14" endBytecode="14" sourcefile="FungusAi.java" sourcepath="game/FungusAi.java"/>
+    <SourceLine classname="game.FungusAi" start="18" end="18" startBytecode="14" endBytecode="14" sourcefile="FungusAi.java" sourcepath="game/FungusAi.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" first="1">
+    <Class classname="game.Inventory">
+      <SourceLine classname="game.Inventory" sourcefile="Inventory.java" sourcepath="game/Inventory.java"/>
+    </Class>
+    <Method classname="game.Inventory" name="getItems" signature="()[Lgame/Item;" isStatic="false">
+      <SourceLine classname="game.Inventory" start="6" end="6" startBytecode="0" endBytecode="46" sourcefile="Inventory.java" sourcepath="game/Inventory.java"/>
+    </Method>
+    <Field classname="game.Inventory" name="items" signature="[Lgame/Item;" isStatic="false">
+      <SourceLine classname="game.Inventory" sourcefile="Inventory.java" sourcepath="game/Inventory.java"/>
+    </Field>
+    <SourceLine classname="game.Inventory" start="6" end="6" startBytecode="4" endBytecode="4" sourcefile="Inventory.java" sourcepath="game/Inventory.java"/>
+    <SourceLine classname="game.Inventory" start="6" end="6" startBytecode="4" endBytecode="4" sourcefile="Inventory.java" sourcepath="game/Inventory.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NEXTINT_VIA_NEXTDOUBLE" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" first="1">
+    <Class classname="game.StuffFactory">
+      <SourceLine classname="game.StuffFactory" sourcefile="StuffFactory.java" sourcepath="game/StuffFactory.java"/>
+    </Class>
+    <Method classname="game.StuffFactory" name="randomArmor" signature="(I)Lgame/Item;" isStatic="false">
+      <SourceLine classname="game.StuffFactory" start="176" end="179" startBytecode="0" endBytecode="124" sourcefile="StuffFactory.java" sourcepath="game/StuffFactory.java"/>
+    </Method>
+    <SourceLine classname="game.StuffFactory" start="176" end="176" startBytecode="7" endBytecode="7" sourcefile="StuffFactory.java" sourcepath="game/StuffFactory.java"/>
+    <SourceLine classname="game.StuffFactory" start="176" end="176" startBytecode="7" endBytecode="7" sourcefile="StuffFactory.java" sourcepath="game/StuffFactory.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NEXTINT_VIA_NEXTDOUBLE" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" first="1">
+    <Class classname="game.StuffFactory">
+      <SourceLine classname="game.StuffFactory" sourcefile="StuffFactory.java" sourcepath="game/StuffFactory.java"/>
+    </Class>
+    <Method classname="game.StuffFactory" name="randomPotion" signature="(I)Lgame/Item;" isStatic="false">
+      <SourceLine classname="game.StuffFactory" start="306" end="315" startBytecode="0" endBytecode="214" sourcefile="StuffFactory.java" sourcepath="game/StuffFactory.java"/>
+    </Method>
+    <SourceLine classname="game.StuffFactory" start="306" end="306" startBytecode="7" endBytecode="7" sourcefile="StuffFactory.java" sourcepath="game/StuffFactory.java"/>
+    <SourceLine classname="game.StuffFactory" start="306" end="306" startBytecode="7" endBytecode="7" sourcefile="StuffFactory.java" sourcepath="game/StuffFactory.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NEXTINT_VIA_NEXTDOUBLE" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" first="1">
+    <Class classname="game.StuffFactory">
+      <SourceLine classname="game.StuffFactory" sourcefile="StuffFactory.java" sourcepath="game/StuffFactory.java"/>
+    </Class>
+    <Method classname="game.StuffFactory" name="randomSpellBook" signature="(I)Lgame/Item;" isStatic="false">
+      <SourceLine classname="game.StuffFactory" start="449" end="451" startBytecode="0" endBytecode="109" sourcefile="StuffFactory.java" sourcepath="game/StuffFactory.java"/>
+    </Method>
+    <SourceLine classname="game.StuffFactory" start="449" end="449" startBytecode="7" endBytecode="7" sourcefile="StuffFactory.java" sourcepath="game/StuffFactory.java"/>
+    <SourceLine classname="game.StuffFactory" start="449" end="449" startBytecode="7" endBytecode="7" sourcefile="StuffFactory.java" sourcepath="game/StuffFactory.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NEXTINT_VIA_NEXTDOUBLE" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" first="1">
+    <Class classname="game.StuffFactory">
+      <SourceLine classname="game.StuffFactory" sourcefile="StuffFactory.java" sourcepath="game/StuffFactory.java"/>
+    </Class>
+    <Method classname="game.StuffFactory" name="randomWeapon" signature="(I)Lgame/Item;" isStatic="false">
+      <SourceLine classname="game.StuffFactory" start="167" end="171" startBytecode="0" endBytecode="139" sourcefile="StuffFactory.java" sourcepath="game/StuffFactory.java"/>
+    </Method>
+    <SourceLine classname="game.StuffFactory" start="167" end="167" startBytecode="7" endBytecode="7" sourcefile="StuffFactory.java" sourcepath="game/StuffFactory.java"/>
+    <SourceLine classname="game.StuffFactory" start="167" end="167" startBytecode="7" endBytecode="7" sourcefile="StuffFactory.java" sourcepath="game/StuffFactory.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NEXTINT_VIA_NEXTDOUBLE" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" first="1">
+    <Class classname="game.StuffFactory$13">
+      <SourceLine classname="game.StuffFactory$13" sourcefile="StuffFactory.java" sourcepath="game/StuffFactory.java"/>
+    </Class>
+    <Method classname="game.StuffFactory$13" name="start" signature="(Lgame/Creature;)V" isStatic="false">
+      <SourceLine classname="game.StuffFactory$13" start="388" end="404" startBytecode="0" endBytecode="223" sourcefile="StuffFactory.java" sourcepath="game/StuffFactory.java"/>
+    </Method>
+    <SourceLine classname="game.StuffFactory$13" start="395" end="395" startBytecode="21" endBytecode="21" sourcefile="StuffFactory.java" sourcepath="game/StuffFactory.java"/>
+    <SourceLine classname="game.StuffFactory$13" start="395" end="395" startBytecode="21" endBytecode="21" sourcefile="StuffFactory.java" sourcepath="game/StuffFactory.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="tests.CreatureAiTest">
+      <SourceLine classname="tests.CreatureAiTest" sourcefile="CreatureAiTest.java" sourcepath="tests/CreatureAiTest.java"/>
+    </Class>
+    <Method classname="tests.CreatureAiTest" name="testCanUseBetterEquipment_1" signature="()V" isStatic="false">
+      <SourceLine classname="tests.CreatureAiTest" start="373" end="381" startBytecode="0" endBytecode="24" sourcefile="CreatureAiTest.java" sourcepath="tests/CreatureAiTest.java"/>
+    </Method>
+    <LocalVariable name="result" register="2" pc="45" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="tests.CreatureAiTest" start="375" end="375" startBytecode="44" endBytecode="44" sourcefile="CreatureAiTest.java" sourcepath="tests/CreatureAiTest.java"/>
+    <SourceLine classname="tests.CreatureAiTest" start="375" end="375" startBytecode="44" endBytecode="44" sourcefile="CreatureAiTest.java" sourcepath="tests/CreatureAiTest.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="result"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_OBJECT" priority="2" rank="17" abbrev="UC" category="STYLE" first="1">
+    <Class classname="tests.InventoryTest">
+      <SourceLine classname="tests.InventoryTest" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+    </Class>
+    <Method classname="tests.InventoryTest" name="testAdd_1" signature="()V" isStatic="false">
+      <SourceLine classname="tests.InventoryTest" start="44" end="50" startBytecode="0" endBytecode="109" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+    </Method>
+    <String value="fixture"/>
+    <Type descriptor="Lgame/Inventory;">
+      <SourceLine classname="game.Inventory" start="6" end="45" sourcefile="Inventory.java" sourcepath="game/Inventory.java"/>
+    </Type>
+    <SourceLine classname="tests.InventoryTest" start="44" end="44" startBytecode="5" endBytecode="5" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_OBJECT" priority="2" rank="17" abbrev="UC" category="STYLE" first="1">
+    <Class classname="tests.InventoryTest">
+      <SourceLine classname="tests.InventoryTest" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+    </Class>
+    <Method classname="tests.InventoryTest" name="testAdd_2" signature="()V" isStatic="false">
+      <SourceLine classname="tests.InventoryTest" start="62" end="68" startBytecode="0" endBytecode="109" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+    </Method>
+    <String value="fixture"/>
+    <Type descriptor="Lgame/Inventory;">
+      <SourceLine classname="game.Inventory" start="6" end="45" sourcefile="Inventory.java" sourcepath="game/Inventory.java"/>
+    </Type>
+    <SourceLine classname="tests.InventoryTest" start="62" end="62" startBytecode="5" endBytecode="5" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_OBJECT" priority="2" rank="17" abbrev="UC" category="STYLE" first="1">
+    <Class classname="tests.InventoryTest">
+      <SourceLine classname="tests.InventoryTest" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+    </Class>
+    <Method classname="tests.InventoryTest" name="testAdd_3" signature="()V" isStatic="false">
+      <SourceLine classname="tests.InventoryTest" start="80" end="86" startBytecode="0" endBytecode="109" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+    </Method>
+    <String value="fixture"/>
+    <Type descriptor="Lgame/Inventory;">
+      <SourceLine classname="game.Inventory" start="6" end="45" sourcefile="Inventory.java" sourcepath="game/Inventory.java"/>
+    </Type>
+    <SourceLine classname="tests.InventoryTest" start="80" end="80" startBytecode="5" endBytecode="5" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_OBJECT" priority="2" rank="17" abbrev="UC" category="STYLE" first="1">
+    <Class classname="tests.InventoryTest">
+      <SourceLine classname="tests.InventoryTest" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+    </Class>
+    <Method classname="tests.InventoryTest" name="testRemove_1" signature="()V" isStatic="false">
+      <SourceLine classname="tests.InventoryTest" start="251" end="257" startBytecode="0" endBytecode="109" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+    </Method>
+    <String value="fixture"/>
+    <Type descriptor="Lgame/Inventory;">
+      <SourceLine classname="game.Inventory" start="6" end="45" sourcefile="Inventory.java" sourcepath="game/Inventory.java"/>
+    </Type>
+    <SourceLine classname="tests.InventoryTest" start="251" end="251" startBytecode="5" endBytecode="5" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_OBJECT" priority="2" rank="17" abbrev="UC" category="STYLE" first="1">
+    <Class classname="tests.InventoryTest">
+      <SourceLine classname="tests.InventoryTest" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+    </Class>
+    <Method classname="tests.InventoryTest" name="testRemove_2" signature="()V" isStatic="false">
+      <SourceLine classname="tests.InventoryTest" start="269" end="275" startBytecode="0" endBytecode="109" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+    </Method>
+    <String value="fixture"/>
+    <Type descriptor="Lgame/Inventory;">
+      <SourceLine classname="game.Inventory" start="6" end="45" sourcefile="Inventory.java" sourcepath="game/Inventory.java"/>
+    </Type>
+    <SourceLine classname="tests.InventoryTest" start="269" end="269" startBytecode="5" endBytecode="5" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_OBJECT" priority="2" rank="17" abbrev="UC" category="STYLE" first="1">
+    <Class classname="tests.InventoryTest">
+      <SourceLine classname="tests.InventoryTest" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+    </Class>
+    <Method classname="tests.InventoryTest" name="testRemove_3" signature="()V" isStatic="false">
+      <SourceLine classname="tests.InventoryTest" start="287" end="293" startBytecode="0" endBytecode="109" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+    </Method>
+    <String value="fixture"/>
+    <Type descriptor="Lgame/Inventory;">
+      <SourceLine classname="game.Inventory" start="6" end="45" sourcefile="Inventory.java" sourcepath="game/Inventory.java"/>
+    </Type>
+    <SourceLine classname="tests.InventoryTest" start="287" end="287" startBytecode="5" endBytecode="5" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_VOID_METHOD" priority="2" rank="17" abbrev="UC" category="STYLE" first="1">
+    <Class classname="tests.InventoryTest">
+      <SourceLine classname="tests.InventoryTest" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+    </Class>
+    <Method classname="tests.InventoryTest" name="testAdd_1" signature="()V" isStatic="false">
+      <SourceLine classname="tests.InventoryTest" start="44" end="50" startBytecode="0" endBytecode="109" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+    </Method>
+    <SourceLine classname="tests.InventoryTest" start="50" end="50" startBytecode="35" endBytecode="35" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+    <SourceLine classname="tests.InventoryTest" start="50" end="50" startBytecode="35" endBytecode="35" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_VOID_METHOD" priority="2" rank="17" abbrev="UC" category="STYLE" first="1">
+    <Class classname="tests.InventoryTest">
+      <SourceLine classname="tests.InventoryTest" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+    </Class>
+    <Method classname="tests.InventoryTest" name="testAdd_2" signature="()V" isStatic="false">
+      <SourceLine classname="tests.InventoryTest" start="62" end="68" startBytecode="0" endBytecode="109" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+    </Method>
+    <SourceLine classname="tests.InventoryTest" start="68" end="68" startBytecode="35" endBytecode="35" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+    <SourceLine classname="tests.InventoryTest" start="68" end="68" startBytecode="35" endBytecode="35" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_VOID_METHOD" priority="2" rank="17" abbrev="UC" category="STYLE" first="1">
+    <Class classname="tests.InventoryTest">
+      <SourceLine classname="tests.InventoryTest" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+    </Class>
+    <Method classname="tests.InventoryTest" name="testAdd_3" signature="()V" isStatic="false">
+      <SourceLine classname="tests.InventoryTest" start="80" end="86" startBytecode="0" endBytecode="109" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+    </Method>
+    <SourceLine classname="tests.InventoryTest" start="86" end="86" startBytecode="35" endBytecode="35" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+    <SourceLine classname="tests.InventoryTest" start="86" end="86" startBytecode="35" endBytecode="35" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_VOID_METHOD" priority="2" rank="17" abbrev="UC" category="STYLE" first="1">
+    <Class classname="tests.InventoryTest">
+      <SourceLine classname="tests.InventoryTest" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+    </Class>
+    <Method classname="tests.InventoryTest" name="testRemove_1" signature="()V" isStatic="false">
+      <SourceLine classname="tests.InventoryTest" start="251" end="257" startBytecode="0" endBytecode="109" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+    </Method>
+    <SourceLine classname="tests.InventoryTest" start="257" end="257" startBytecode="35" endBytecode="35" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+    <SourceLine classname="tests.InventoryTest" start="257" end="257" startBytecode="35" endBytecode="35" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_VOID_METHOD" priority="2" rank="17" abbrev="UC" category="STYLE" first="1">
+    <Class classname="tests.InventoryTest">
+      <SourceLine classname="tests.InventoryTest" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+    </Class>
+    <Method classname="tests.InventoryTest" name="testRemove_2" signature="()V" isStatic="false">
+      <SourceLine classname="tests.InventoryTest" start="269" end="275" startBytecode="0" endBytecode="109" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+    </Method>
+    <SourceLine classname="tests.InventoryTest" start="275" end="275" startBytecode="35" endBytecode="35" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+    <SourceLine classname="tests.InventoryTest" start="275" end="275" startBytecode="35" endBytecode="35" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_VOID_METHOD" priority="2" rank="17" abbrev="UC" category="STYLE" first="1">
+    <Class classname="tests.InventoryTest">
+      <SourceLine classname="tests.InventoryTest" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+    </Class>
+    <Method classname="tests.InventoryTest" name="testRemove_3" signature="()V" isStatic="false">
+      <SourceLine classname="tests.InventoryTest" start="287" end="293" startBytecode="0" endBytecode="109" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+    </Method>
+    <SourceLine classname="tests.InventoryTest" start="293" end="293" startBytecode="35" endBytecode="35" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+    <SourceLine classname="tests.InventoryTest" start="293" end="293" startBytecode="35" endBytecode="35" sourcefile="InventoryTest.java" sourcepath="tests/InventoryTest.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" first="1">
+    <Class classname="ui.LevelUpScreen">
+      <SourceLine classname="ui.LevelUpScreen" sourcefile="LevelUpScreen.java" sourcepath="ui/LevelUpScreen.java"/>
+    </Class>
+    <Method classname="ui.LevelUpScreen" name="respondToUserInput" signature="(Ljava/awt/event/KeyEvent;)Lui/Screen;" isStatic="false">
+      <SourceLine classname="ui.LevelUpScreen" start="37" end="54" startBytecode="0" endBytecode="291" sourcefile="LevelUpScreen.java" sourcepath="ui/LevelUpScreen.java"/>
+    </Method>
+    <SourceLine classname="ui.LevelUpScreen" start="41" end="41" startBytecode="17" endBytecode="17" sourcefile="LevelUpScreen.java" sourcepath="ui/LevelUpScreen.java"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" first="1">
+    <Class classname="ui.PlayScreen">
+      <SourceLine classname="ui.PlayScreen" sourcefile="PlayScreen.java" sourcepath="ui/PlayScreen.java"/>
+    </Class>
+    <Method classname="ui.PlayScreen" name="respondToUserInput" signature="(Ljava/awt/event/KeyEvent;)Lui/Screen;" isStatic="false">
+      <SourceLine classname="ui.PlayScreen" start="142" end="205" startBytecode="0" endBytecode="1117" sourcefile="PlayScreen.java" sourcepath="ui/PlayScreen.java"/>
+    </Method>
+    <SourceLine classname="ui.PlayScreen" start="147" end="178" startBytecode="36" endBytecode="617" sourcefile="PlayScreen.java" sourcepath="ui/PlayScreen.java"/>
+    <SourceLine classname="ui.PlayScreen" start="147" end="178" startBytecode="36" endBytecode="617" sourcefile="PlayScreen.java" sourcepath="ui/PlayScreen.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sat, 19 May 2018 10:28:46 -0400" total_classes="75" referenced_classes="375" total_bugs="26" total_size="3793" num_packages="3" java_version="1.8.0_131" vm_version="25.131-b11" cpu_seconds="16.71" clock_seconds="3.15" peak_mbytes="619.76" alloc_mbytes="1024.00" gc_seconds="0.27" priority_2="26">
+    <PackageStats package="game" total_bugs="11" total_types="48" total_size="1784" priority_2="11">
+      <ClassStats class="game.AppletMain" sourceFile="AppletMain.java" interface="false" size="29" bugs="1" priority_2="1"/>
+      <ClassStats class="game.ApplicationMain" sourceFile="ApplicationMain.java" interface="false" size="31" bugs="1" priority_2="1"/>
+      <ClassStats class="game.BatAi" sourceFile="BatAi.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="game.Creature" sourceFile="Creature.java" interface="false" size="425" bugs="1" priority_2="1"/>
+      <ClassStats class="game.CreatureAi" sourceFile="CreatureAi.java" interface="false" size="100" bugs="1" priority_2="1"/>
+      <ClassStats class="game.EatScreen" sourceFile="EatScreen.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="game.Effect" sourceFile="Effect.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="game.FieldOfView" sourceFile="FieldOfView.java" interface="false" size="35" bugs="0"/>
+      <ClassStats class="game.FungusAi" sourceFile="FungusAi.java" interface="false" size="23" bugs="1" priority_2="1"/>
+      <ClassStats class="game.GoblinAi" sourceFile="GoblinAi.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="game.Inventory" sourceFile="Inventory.java" interface="false" size="33" bugs="1" priority_2="1"/>
+      <ClassStats class="game.Item" sourceFile="Item.java" interface="false" size="71" bugs="0"/>
+      <ClassStats class="game.LevelUpController" sourceFile="LevelUpController.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="game.LevelUpController$1" sourceFile="LevelUpController.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="game.LevelUpController$2" sourceFile="LevelUpController.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="game.LevelUpController$3" sourceFile="LevelUpController.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="game.LevelUpController$4" sourceFile="LevelUpController.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="game.LevelUpController$5" sourceFile="LevelUpController.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="game.LevelUpController$6" sourceFile="LevelUpController.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="game.LevelUpController$7" sourceFile="LevelUpController.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="game.LevelUpOption" sourceFile="LevelUpOption.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="game.Line" sourceFile="Line.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="game.Path" sourceFile="Path.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="game.PathFinder" sourceFile="PathFinder.java" interface="false" size="74" bugs="0"/>
+      <ClassStats class="game.PathFinderData" sourceFile="PathFinderData.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="game.PlayerAi" sourceFile="PlayerAi.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="game.Point" sourceFile="Point.java" interface="false" size="41" bugs="0"/>
+      <ClassStats class="game.Spell" sourceFile="Spell.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="game.StuffFactory" sourceFile="StuffFactory.java" interface="false" size="201" bugs="4" priority_2="4"/>
+      <ClassStats class="game.StuffFactory$1" sourceFile="StuffFactory.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="game.StuffFactory$10" sourceFile="StuffFactory.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="game.StuffFactory$11" sourceFile="StuffFactory.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="game.StuffFactory$12" sourceFile="StuffFactory.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="game.StuffFactory$13" sourceFile="StuffFactory.java" interface="false" size="15" bugs="1" priority_2="1"/>
+      <ClassStats class="game.StuffFactory$14" sourceFile="StuffFactory.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="game.StuffFactory$15" sourceFile="StuffFactory.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="game.StuffFactory$2" sourceFile="StuffFactory.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="game.StuffFactory$3" sourceFile="StuffFactory.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="game.StuffFactory$4" sourceFile="StuffFactory.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="game.StuffFactory$5" sourceFile="StuffFactory.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="game.StuffFactory$6" sourceFile="StuffFactory.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="game.StuffFactory$7" sourceFile="StuffFactory.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="game.StuffFactory$8" sourceFile="StuffFactory.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="game.StuffFactory$9" sourceFile="StuffFactory.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="game.Tile" sourceFile="Tile.java" interface="false" size="38" bugs="0"/>
+      <ClassStats class="game.World" sourceFile="World.java" interface="false" size="117" bugs="0"/>
+      <ClassStats class="game.WorldBuilder" sourceFile="WorldBuilder.java" interface="false" size="127" bugs="0"/>
+      <ClassStats class="game.ZombieAi" sourceFile="ZombieAi.java" interface="false" size="13" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="tests" total_bugs="13" total_types="7" total_size="1503" priority_2="13">
+      <ClassStats class="tests.AllTests" sourceFile="AllTests.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="tests.CreatureAiTest" sourceFile="CreatureAiTest.java" interface="false" size="311" bugs="1" priority_2="1"/>
+      <ClassStats class="tests.CreatureTest" sourceFile="CreatureTest.java" interface="false" size="659" bugs="0"/>
+      <ClassStats class="tests.EatScreenTest" sourceFile="EatScreenTest.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="tests.InventoryTest" sourceFile="InventoryTest.java" interface="false" size="92" bugs="12" priority_2="12"/>
+      <ClassStats class="tests.LevelUpOptionTest" sourceFile="LevelUpOptionTest.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="tests.WorldTest" sourceFile="WorldTest.java" interface="false" size="396" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="ui" total_bugs="2" total_types="20" total_size="506" priority_2="2">
+      <ClassStats class="ui.CastSpellScreen" sourceFile="CastSpellScreen.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="ui.DropScreen" sourceFile="DropScreen.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="ui.EquipScreen" sourceFile="EquipScreen.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="ui.ExamineScreen" sourceFile="ExamineScreen.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="ui.FireWeaponScreen" sourceFile="FireWeaponScreen.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="ui.HelpScreen" sourceFile="HelpScreen.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="ui.InventoryBasedScreen" sourceFile="InventoryBasedScreen.java" interface="false" size="46" bugs="0"/>
+      <ClassStats class="ui.LevelUpScreen" sourceFile="LevelUpScreen.java" interface="false" size="31" bugs="1" priority_2="1"/>
+      <ClassStats class="ui.LookScreen" sourceFile="LookScreen.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="ui.LoseScreen" sourceFile="LoseScreen.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="ui.PlayScreen" sourceFile="PlayScreen.java" interface="false" size="146" bugs="1" priority_2="1"/>
+      <ClassStats class="ui.QuaffScreen" sourceFile="QuaffScreen.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="ui.ReadScreen" sourceFile="ReadScreen.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="ui.ReadSpellScreen" sourceFile="ReadSpellScreen.java" interface="false" size="48" bugs="0"/>
+      <ClassStats class="ui.Screen" sourceFile="Screen.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="ui.StartScreen" sourceFile="StartScreen.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="ui.TargetBasedScreen" sourceFile="TargetBasedScreen.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="ui.ThrowAtScreen" sourceFile="ThrowAtScreen.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="ui.ThrowScreen" sourceFile="ThrowScreen.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="ui.WinScreen" sourceFile="WinScreen.java" interface="false" size="9" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="397" invocations="1583" avgMicrosecondsPerInvocation="250" maxMicrosecondsPerInvocation="36337" standardDeviationMicrosecondsPerInvocation="1382"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="197" invocations="375" avgMicrosecondsPerInvocation="526" maxMicrosecondsPerInvocation="23208" standardDeviationMicrosecondsPerInvocation="1553"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="160" invocations="375" avgMicrosecondsPerInvocation="428" maxMicrosecondsPerInvocation="6298" standardDeviationMicrosecondsPerInvocation="839"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="144" invocations="605" avgMicrosecondsPerInvocation="238" maxMicrosecondsPerInvocation="2197" standardDeviationMicrosecondsPerInvocation="253"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="131" invocations="2" avgMicrosecondsPerInvocation="65997" maxMicrosecondsPerInvocation="89949" standardDeviationMicrosecondsPerInvocation="23952"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="118" invocations="605" avgMicrosecondsPerInvocation="196" maxMicrosecondsPerInvocation="16595" standardDeviationMicrosecondsPerInvocation="696"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="107" invocations="1281" avgMicrosecondsPerInvocation="84" maxMicrosecondsPerInvocation="927" standardDeviationMicrosecondsPerInvocation="110"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="98" invocations="605" avgMicrosecondsPerInvocation="162" maxMicrosecondsPerInvocation="3141" standardDeviationMicrosecondsPerInvocation="261"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="95" invocations="605" avgMicrosecondsPerInvocation="158" maxMicrosecondsPerInvocation="29055" standardDeviationMicrosecondsPerInvocation="1182"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="95" invocations="613" avgMicrosecondsPerInvocation="156" maxMicrosecondsPerInvocation="2545" standardDeviationMicrosecondsPerInvocation="263"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="84" invocations="1586" avgMicrosecondsPerInvocation="53" maxMicrosecondsPerInvocation="5740" standardDeviationMicrosecondsPerInvocation="213"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="73" invocations="499" avgMicrosecondsPerInvocation="146" maxMicrosecondsPerInvocation="16624" standardDeviationMicrosecondsPerInvocation="747"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="64" invocations="605" avgMicrosecondsPerInvocation="105" maxMicrosecondsPerInvocation="2444" standardDeviationMicrosecondsPerInvocation="131"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="54" invocations="375" avgMicrosecondsPerInvocation="145" maxMicrosecondsPerInvocation="16062" standardDeviationMicrosecondsPerInvocation="839"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="53" invocations="439" avgMicrosecondsPerInvocation="122" maxMicrosecondsPerInvocation="33668" standardDeviationMicrosecondsPerInvocation="1604"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="50" invocations="1534" avgMicrosecondsPerInvocation="33" maxMicrosecondsPerInvocation="17024" standardDeviationMicrosecondsPerInvocation="435"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="49" invocations="375" avgMicrosecondsPerInvocation="132" maxMicrosecondsPerInvocation="2526" standardDeviationMicrosecondsPerInvocation="260"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="49" invocations="375" avgMicrosecondsPerInvocation="131" maxMicrosecondsPerInvocation="20843" standardDeviationMicrosecondsPerInvocation="1082"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.Naming" totalMilliseconds="39" invocations="75" avgMicrosecondsPerInvocation="520" maxMicrosecondsPerInvocation="33703" standardDeviationMicrosecondsPerInvocation="3857"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="35" invocations="375" avgMicrosecondsPerInvocation="95" maxMicrosecondsPerInvocation="2098" standardDeviationMicrosecondsPerInvocation="210"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CrossSiteScripting" totalMilliseconds="32" invocations="75" avgMicrosecondsPerInvocation="431" maxMicrosecondsPerInvocation="22689" standardDeviationMicrosecondsPerInvocation="2602"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="31" invocations="375" avgMicrosecondsPerInvocation="83" maxMicrosecondsPerInvocation="5735" standardDeviationMicrosecondsPerInvocation="533"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteRecursiveLoop" totalMilliseconds="29" invocations="75" avgMicrosecondsPerInvocation="399" maxMicrosecondsPerInvocation="20159" standardDeviationMicrosecondsPerInvocation="2313"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="27" invocations="605" avgMicrosecondsPerInvocation="45" maxMicrosecondsPerInvocation="542" standardDeviationMicrosecondsPerInvocation="55"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="27" invocations="75" avgMicrosecondsPerInvocation="364" maxMicrosecondsPerInvocation="15987" standardDeviationMicrosecondsPerInvocation="1844"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.URLProblems" totalMilliseconds="25" invocations="75" avgMicrosecondsPerInvocation="343" maxMicrosecondsPerInvocation="19050" standardDeviationMicrosecondsPerInvocation="2190"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindReturnRef" totalMilliseconds="25" invocations="75" avgMicrosecondsPerInvocation="338" maxMicrosecondsPerInvocation="16600" standardDeviationMicrosecondsPerInvocation="1910"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="25" invocations="375" avgMicrosecondsPerInvocation="67" maxMicrosecondsPerInvocation="1475" standardDeviationMicrosecondsPerInvocation="153"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="23" invocations="375" avgMicrosecondsPerInvocation="63" maxMicrosecondsPerInvocation="3144" standardDeviationMicrosecondsPerInvocation="197"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="23" invocations="75" avgMicrosecondsPerInvocation="309" maxMicrosecondsPerInvocation="3747" standardDeviationMicrosecondsPerInvocation="616"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1526740302647" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

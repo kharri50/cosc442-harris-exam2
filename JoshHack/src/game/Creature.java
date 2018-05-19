@@ -133,6 +133,18 @@ public class Creature {
 		
 		Tile tile = world.tile(x+mx, y+my, z+mz);
 		
+		processStairs(mz, tile);
+		
+		Creature other = world.creature(x+mx, y+my, z+mz);
+		
+		modifyFood(-1);
+		
+		if (other == null)
+			ai.onEnter(x+mx, y+my, z+mz, tile);
+		else
+			meleeAttack(other);
+	}
+	private void processStairs(int mz, Tile tile) {
 		if (mz == -1){
 			if (tile == Tile.STAIRS_DOWN) {
 				doAction("walk up the stairs to level %d", z+mz+1);
@@ -148,15 +160,6 @@ public class Creature {
 				return;
 			}
 		}
-		
-		Creature other = world.creature(x+mx, y+my, z+mz);
-		
-		modifyFood(-1);
-		
-		if (other == null)
-			ai.onEnter(x+mx, y+my, z+mz, tile);
-		else
-			meleeAttack(other);
 	}
 
 	public void meleeAttack(Creature other){
@@ -183,6 +186,7 @@ public class Creature {
 		for (int i = 0; i < params.length; i++){
 			params2[i] = params[i];
 		}
+		
 		params2[params2.length - 1] = amount;
 		
 		doAction(action, params2);
@@ -495,17 +499,16 @@ public class Creature {
 	public void throwItem(Item item, int wx, int wy, int wz) {
 		Point end = new Point(x, y, 0);
 		
-		for (Point p : new Line(x, y, wx, wy)){
-			if (!realTile(p.x, p.y, z).isGround())
-				break;
-			end = p;
-		}
+		end = processPoint(wx, wy, end);
 		
 		wx = end.x;
 		wy = end.y;
 		
 		Creature c = creature(wx, wy, wz);
 		
+		throwItem(item, wx, wy, wz, c);
+	}
+	private void throwItem(Item item, int wx, int wy, int wz, Creature c) {
 		if (c != null)
 			throwAttack(item, c);				
 		else
@@ -515,6 +518,14 @@ public class Creature {
 			getRidOf(item);
 		else
 			putAt(item, wx, wy, wz);
+	}
+	private Point processPoint(int wx, int wy, Point end) {
+		for (Point p : new Line(x, y, wx, wy)){
+			if (!realTile(p.x, p.y, z).isGround())
+				break;
+			end = p;
+		}
+		return end;
 	}
 	
 	public void summon(Creature other) {

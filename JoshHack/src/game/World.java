@@ -85,6 +85,10 @@ public class World {
 		} 
 		while (!tile(x,y,z).isGround() || creature(x,y,z) != null);
 		
+		addEmpty(creature, z, x, y);
+	}
+
+	private void addEmpty(Creature creature, int z, int x, int y) {
 		creature.x = x;
 		creature.y = y;
 		creature.z = z;
@@ -145,6 +149,11 @@ public class World {
 		
 		points.add(new Point(x, y, z));
 		
+		processPoint(item, points, checked);
+		return false;
+	}
+
+	private boolean processPoint(Item item, List<Point> points, List<Point> checked) {
 		while (!points.isEmpty()){
 			Point p = points.remove(0);
 			checked.add(p);
@@ -164,7 +173,7 @@ public class World {
 				points.addAll(neighbors);
 			}
 		}
-		return false;
+		return true;
 	}
 
 	public void add(Creature pet) {

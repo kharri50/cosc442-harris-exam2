@@ -139,6 +139,10 @@ public class CreatureAi {
 		int currentWeaponRating = creature.weapon() == null ? 0 : creature.weapon().attackValue() + creature.weapon().rangedAttackValue();
 		int currentArmorRating = creature.armor() == null ? 0 : creature.armor().defenseValue();
 		
+		useBetterEqup(currentWeaponRating, currentArmorRating);
+	}
+
+	private void useBetterEqup(int currentWeaponRating, int currentArmorRating) {
 		for (Item item : creature.inventory().getItems()){
 			if (item == null)
 				continue;
