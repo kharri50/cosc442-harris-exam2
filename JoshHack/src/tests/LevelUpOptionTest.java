@@ -1,7 +1,8 @@
 package tests;
-
-import org.junit.*;
 import static org.junit.Assert.*;
+import ui.*;
+import game.*;
+import org.junit.*;
 
 /**
  * The class <code>LevelUpOptionTest</code> contains tests for the class <code>{@link LevelUpOption}</code>.

@@ -9,13 +9,14 @@ import org.junit.runners.Suite;
  * of the tests within its package as well as within any subpackages of its
  * package.
  *
- * @generatedBy CodePro at 5/19/18 9:29 AM
+ * @generatedBy CodePro at 5/19/18 9:48 AM
  * @author kyleharris
  * @version $Revision: 1.0 $
  */
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
 	LevelUpOptionTest.class,
+	WorldTest.class,
 	EatScreenTest.class,
 	LevelUpControllerTest.class,
 	FieldOfViewTest.class,
@@ -31,7 +32,7 @@ public class TestAll {
 	 *
 	 * @param args the command line arguments
 	 *
-	 * @generatedBy CodePro at 5/19/18 9:29 AM
+	 * @generatedBy CodePro at 5/19/18 9:48 AM
 	 */
 	public static void main(String[] args) {
 		JUnitCore.runClasses(new Class[] { TestAll.class });

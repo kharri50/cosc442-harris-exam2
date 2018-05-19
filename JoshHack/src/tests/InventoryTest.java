@@ -1,9 +1,9 @@
-package game;
-
+package tests;
+import game.*;
 import java.awt.Color;
 import org.junit.*;
 import static org.junit.Assert.*;
-
+import ui.*;
 /**
  * The class <code>InventoryTest</code> contains tests for the class <code>{@link Inventory}</code>.
  *
